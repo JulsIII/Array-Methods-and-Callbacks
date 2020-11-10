@@ -27,10 +27,13 @@ console.log('Task 1 e:', finals2014[0]['Win conditions']);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
 
-function getFinals(/* code here */) {
-   /* code here */
-}
-
+function getFinals(datas) {
+   const onlyFinals = datas.filter(function(item){
+        return item.Stage === 'Final'
+   });
+   return onlyFinals;
+ }
+console.log(getFinals(fifaData));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
