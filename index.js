@@ -56,16 +56,13 @@ function getYears(ftnCB) {
 Implement a higher-order function called `getWinners`, that accepts the callback function `getFinals()` and determine the winner (home or away) of each `finals` game. Return the name of all winning countries in an array called `winners` */ 
 
 function getWinners(finalsCB) {
-
     const winners = [];
     finalsCB.forEach(function(value){
-
         if(value['Home Team Goals'] > value['Away Team Goals']){
             return winners.push(value['Home Team Name']);
         } else {
             return winners.push(value['Away Team Name']);
         }
-           
     })
     return winners;
 }    
@@ -99,9 +96,6 @@ function getAverageGoals(data) {
       let avgTotal = value / data.length;
       return avgTotal.toFixed(2);
 }
-
-//console.log(fifaData)
-
 
 
 /// 🥅 STRETCH 🥅 ///
